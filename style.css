@@ -3,3 +3,47 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.header {
+  width: 100%;
+  background-color: #5858d6;
+  padding: 20px;
+  text-align: right;
+}
+
+.heading-and-button {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header .heading {
+  max-width: 968px;
+  float: left;
+  position: relative;
+  top: 10px;
+  color: #000;
+}
+
+.header .add-movie-btn {
+  height: 50px;
+  width: 120px;
+  font-size: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 10px;
+  background-color: coral;
+}
+
+.header .add-movie-btn:hover {
+  background-color: #fa926c;
+}
+
+.header .add-movie-btn:active {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: none;
+  border-bottom: none;
+  background-color: #cf6640;
+}
