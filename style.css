@@ -36,7 +36,8 @@
   background-color: coral;
 }
 
-.header .add-movie-btn:hover {
+.header .add-movie-btn:hover,
+.footer a:hover {
   background-color: #fa926c;
 }
 
@@ -46,4 +47,24 @@
   border-right: none;
   border-bottom: none;
   background-color: #cf6640;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  padding: 15px;
+  border-radius: 45%;
+  background-color: coral;
+}
+
+.footer a:active {
+  background-color: #ca5428;
 }
