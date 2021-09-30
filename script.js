@@ -25,9 +25,9 @@ function toggleBackDrop() {
 }
 
 function toggleNoMovieAddedBox() {
-  if (movieListArray.length > 0) {
+  if (movieListArray.length) {
     noMovieAddedBox.className = "no-movie-added-box-1 invisible";
-  } else if (movieListArray.length < 1) {
+  } else if (!movieListArray.length) {
     noMovieAddedBox.className = "no-movie-added-box-1";
   }
 }
@@ -95,9 +95,9 @@ function addMovieToDataBase() {
   const movieRating = movieRatingInput.value;
 
   if (
-    movieName.trim() === "" ||
-    movieUrl.trim() === "" ||
-    movieRating.trim() === "" ||
+    !movieName.trim() ||
+    !movieUrl.trim() ||
+    !movieRating.trim() ||
     +movieRating < 1 ||
     +movieRating > 5
   ) {

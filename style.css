@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-/* .invisible {
-  display: none;
-}
-
-.visible {
-  display: block;
-  transform: translateY(10px);
-} */
-
 .backdrop {
   position: fixed;
   top: 0;
