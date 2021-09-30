@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 
-.invisible {
+/* .invisible {
   display: none;
 }
 
 .visible {
   display: block;
   transform: translateY(10px);
-}
+} */
 
 .backdrop {
   position: fixed;
@@ -25,7 +25,7 @@
   display: none;
 }
 
-.backdrop .visible {
+.backdrop.visible {
   display: block;
   pointer-events: all;
 }
@@ -81,13 +81,14 @@
 .add-movie-modal {
   max-width: 800px;
   margin: auto;
-  padding: 50px;
+  padding: auto;
 }
 
 .movie-modal {
   position: fixed;
   top: 30vh;
   display: none;
+  width: 800px;
   margin: 10px;
   padding: 25px;
   height: 40vh;
@@ -98,8 +99,7 @@
   z-index: 20;
 }
 
-.movie-modal .visible,
-.delete-movie-modal .visible {
+.movie-modal.visible {
   display: block;
   animation: fade-slide-in 0.3s ease-out forwards;
 }
@@ -148,9 +148,7 @@
 .delete-movie-modal {
   display: none;
   position: fixed;
-  top: 30vh;
   width: 800px;
-  margin: auto;
   padding: 20px;
   height: 15vh;
   border: #000 solid 2px;
@@ -158,6 +156,17 @@
   box-shadow: grey 2px 2px 3px 2px;
   background-color: #cef0ff;
   z-index: 30;
+}
+
+.delete-movie-modal-section {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-movie-modal.visible {
+  display: block;
+  position: fixed;
+  top: 30%;
 }
 
 .delete-movie-modal-btn .delete-movie-btn {
@@ -186,7 +195,7 @@
 
 .no-movie-added-box-1 {
   max-width: 1200px;
-  margin: auto;
+  margin: 50px auto;
   padding: 50px;
   text-align: center;
   color: #808080;
@@ -194,11 +203,73 @@
   border-radius: 35px;
 }
 
+.no-movie-added-box-1.invisible {
+  display: none;
+}
+
+#movie-list {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#movie-list li {
+  margin: 5px;
+  width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: #808080 solid 2px;
+  border-radius: 15px;
+}
+
+#movie-list li img {
+  height: 150px;
+  width: 150px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#title-rating-bunch {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#movie-list li h2 {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #c5fcff;
+}
+
+#movie-list li h4 {
+  margin: 20px;
+  padding-top: 4px;
+  text-align: center;
+  width: 50px;
+  height: 25px;
+  border-radius: 8px;
+  background-color: #fba180;
+}
+
 .footer {
   max-width: 1200px;
   margin: auto;
   padding: 50px;
   text-align: center;
+}
+
+.footer button a {
+  height: auto;
+  width: auto;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer button a:active {
+  background-color: #ca5428;
 }
 
 .footer button {
