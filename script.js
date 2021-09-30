@@ -44,6 +44,7 @@ function addMovieMainBtnHandler() {
 function checkingWhichModalIsOpen() {
   if (addMovieModal.className === "movie-modal visible") {
     toggleMovieModal();
+    clearInputValues();
   }
   if (deleteMovieModal.className === "delete-movie-modal visible") {
     toggleDeleteMovieModal();
