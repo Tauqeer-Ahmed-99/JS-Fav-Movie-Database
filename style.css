@@ -289,3 +289,41 @@
 .footer button:active {
   background-color: #ca5428;
 }
+
+@media screen and (max-width: 480px) {
+  .header .heading {
+    margin: 20px;
+  }
+  .heading-and-button {
+    text-align: center;
+  }
+  .no-movie-added-box-1 {
+    margin: 20px;
+  }
+  .footer button {
+    position: fixed;
+    top: 90%;
+    left: 80%;
+    z-index: 5;
+  }
+  .movie-modal.visible {
+    width: 100%;
+    height: 65%;
+    margin: 5px;
+  }
+  #movie-list li {
+    width: 100%;
+    height: 107px;
+    margin: 5px;
+  }
+
+  #movie-list li img {
+    height: 100px;
+    width: 100px;
+  }
+  .delete-movie-modal.visible {
+    width: 100%;
+    height: 30%;
+    margin: 5px;
+  }
+}
